@@ -1,8 +1,16 @@
 var elfApp = angular.module('elfApp');
 
-elfApp.controller('FirstController', function($scope) {
+elfApp.controller('AboutController', function($scope) {
     'use strict';
 
-    $scope.description = 'FirstController Data';
+    $scope.description = 'AboutController Data';
 
+});
+
+elfApp.directive('elfAboutDescription', function() {
+    'use strict';
+    return {
+        controller: 'AboutController',
+        templateUrl: 'about-controller'
+    };
 });

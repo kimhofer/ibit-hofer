@@ -6,3 +6,12 @@ elfApp.controller('HomeController', function($scope) {
     $scope.description = 'HomeController Data';
 
 });
+
+elfApp.directive('elfHomeDescription', function() {
+    'use strict';
+    return {
+        controller: 'HomeController',
+        templateUrl: 'home-controller'
+    };
+});
+
